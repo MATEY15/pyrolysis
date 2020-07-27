@@ -1,0 +1,227 @@
+extends layout.pug
+
+block variabl
+	- var title = "Газели Серпухов"
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section--pyrolysis-map
+			.container
+				.whatis-pyrolysis
+					p ЧТО ТАКОЕ #[span ПИРОЛИЗ?]
+			
+			.container
+				.pyrolysis-map--wrapper
+					.row
+						.pyrolysis-map--content
+							.pyrolysis-content
+								.number-counter 1
+								p Пиролиз (десорбция, термодесорбция) – наболее современная и экологичная технология утилизации пластика, резины, широкого спектра нефтяных, буровых и целого ряда других промышленных отходов, основанная на принципе безкислородного термического разложения. Термодесорбция особенно эффективна при высоком содержании углеводородов в отходе (15% и выше). Например, для переработки шламов очистки трубопроводов, отходов бурения на углеводородной основе, а также для ряда других органических отходов.
+							.pyrolysis-content
+								.number-counter 2
+								p Процесс пиролиза протекает при температуре от 400-600 градусов Цельсия, в зависимости от типа отходов и заданного температурного режима. В таком режиме, в отсутствии окислителя, из отходов «выкипают» все углеводородсодержащие органические соединения. В результате образуются углистый остаток (условно называемый золой) и парогазовая смесь, которую очищают и конденсируют.
+							.pyrolysis-content
+								.number-counter 3
+								p Все, что может быть сконденсировано путем резкого охлаждения, является конечным продуктом в форме жидкой смеси углеводородов (печное топливо, пиролизное топливо).
+							.pyrolysis-content
+								.number-counter 4
+								p В установках серии УНП поддержание температуры обеспечивается за счет сжигания части вырабатываемого конечного продукта, и лишь при запуске установки потребуется применить некоторое количество дизельного топлива.
+						.pyrolysis-map--image
+							.pyrolysis-image
+								img(src="img/map-img.jpg", alt="")
+
+		section.section-installation
+			.container
+				.installation-text
+					h3 УСТАНОВКИ #[span УНП=] НОВОЕ СЛОВО #[br]
+						| В НЕПРЕРЫВНОМ #[span ПИРОЛИЗ]Е
+				img(src="img/installation-img.jpg", alt="").installation-img
+
+		section.section-consultation
+			.container
+				.consultation-wrapper
+					p ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+
+		section.section-waste
+			.container
+				.waste-wrapper
+					.waste-head
+						h3 ВИДЫ #[br] ПЕРЕРАБАТЫВАЕМЫХ ОТХОДОВ
+					.row
+						.col-md-6
+							ul.list-waste
+								li › ТБО/ТКО;
+								li › загрязненные нефтью и нефтепродуктами грунты, ветошь и пр.;
+								li › шины, покрышки и другие резиновые и пластмассовые изделия;
+								li › отходы сельскохозяйственного производства;
+								li › отходы химических производств, в том числе - растворы;
+								li › медицинские и биологические отходы;
+								li › отходы пищевой промышленности;
+								li › отходы от производства текстильных изделий и изделий из кожи;
+								li › отходы производства резиновых и пластмассовых изделий;
+								li › отходы деревообрабатывающих производств;
+								li › текстиль, кожа и изделия из них, утратившие потребительские свойства;
+								li › отходы муниципальных очистных сооружений.
+						.col-md-6
+							.waste--images-table
+								.waste-images
+									img(src="img/waste1.jpg", alt="")
+								.waste-images
+									img(src="img/waste2.jpg", alt="")
+								.waste-images
+									img(src="img/waste3.jpg", alt="")
+								.waste-images
+									img(src="img/waste4.jpg", alt="")
+								.waste-images
+									img(src="img/waste5.jpg", alt="")
+								.waste-images
+									img(src="img/waste6.jpg", alt="")
+
+		section.section-advantage
+			.container
+				.advantage-wrapper
+					.advantage-head
+						h3 ПРЕИМУЩЕСТВА #[br] #[span ОБОРУДОВАНИЯ]
+					.advantage-main
+						.advantage-items
+							.advantage-items--icon
+								img(src="img/advantage1.png", alt="")
+							p Низкое потребление всех видов энергоносителей
+						.advantage-items
+							.advantage-items--icon
+								img(src="img/advantage2.png", alt="")
+							p Отсутствие биологически активных остатков
+						.advantage-items
+							.advantage-items--icon
+								img(src="img/advantage3.png", alt="")
+							p Переработка трудноразлагаемых веществ
+						.advantage-items
+							.advantage-items--icon
+								img(src="img/advantage4.png", alt="")
+							p Производство тепловой энергии или пара
+						.advantage-items
+							.advantage-items--icon
+								img(src="img/advantage5.png", alt="")
+							p Простота в транспортировке короткий период окупаемости
+
+		section.section--waste-profit
+			.container
+				.waste-profit--head
+					h3 ОТХОДЫ - ЭТО ВЫГОДНО!
+			.table-profit--main
+				.container-small
+					.table-profit--head
+						h4 Отходы, которые наиболее выгодно перерабатывать в установках УНП:
+					.tablet-main
+						.tablet-main--wrapper
+							table
+								tr
+									td(width="28%") Тип отхода
+									td Полезный продукт
+									td Полезный продукт
+									td Полезный продукт
+								+tablet()
+								+tablet()
+								+tablet()
+								+tablet()
+								+tablet()
+								+tablet()
+								+tablet()
+								+tablet()
+						img(src="img/teble-bg.png", alt="")
+
+		section.section--specifications
+			.container-small
+				.specifications-head
+					h4 ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+				.specifications-wrapper
+					.specifications-tabl--main
+						table.specifications-tabl
+							tr
+								td(rowspan="2" width="24%") Тип отхода
+								td(colspan="4").col-bg Полезный продукт
+							tr
+								td.no-col-bg Тип отхода
+								td Полезный продукт
+								td Полезный продукт
+								td Полезный продукт
+							
+							+tabletm()
+							+tabletm()
+							+tabletm()
+							+tabletm()
+							+tabletm()
+					img(src="img/teblem-bg.png", alt="").specifications-bg
+					
+		section.section--sertificat
+			.container
+				.container-small
+					.default-head
+						h4 СЕРТИФИКАТЫ
+			
+				.sertificat-wrapper.popup-gallery
+					a(href="img/sertificat1.jpg").sertificat-items
+						img(src="img/sertificat1.jpg", alt="")
+					a(href="img/sertificat1.jpg").sertificat-items
+						img(src="img/sertificat1.jpg", alt="")
+					a(href="img/sertificat1.jpg").sertificat-items
+						img(src="img/sertificat1.jpg", alt="")
+					a(href="img/sertificat1.jpg").sertificat-items
+						img(src="img/sertificat1.jpg", alt="")
+					a(href="img/sertificat1.jpg").sertificat-items
+						img(src="img/sertificat1.jpg", alt="")
+					a(href="img/sertificat1.jpg").sertificat-items
+						img(src="img/sertificat1.jpg", alt="")
+
+				.gallery-border
+					span
+
+		section.section-posts
+			.container
+				.container-small
+					.row
+						.col-md-5
+							.default-head
+								h4 ОТЗЫВЫ
+						.col-md-7.slider-wrapper
+							.slider-post
+								.slider-post--item
+									.slider-post--content
+										h5 Морская экологическая служба
+										.slider-post--text
+											p Пиролиз (десорбция, термодесорбция) – наболее современная и экологичная технология утилизации пластика, резины, широкого спектра нефтяных, буровых и целого ряда других промышленных отходов, основанная на принципе безкислородного термического разложения. Термодесорбция особенно эффективна при высоком содержании углеводородов в отходе (15% и выше). Например, для переработки шламов очистки трубопроводов, отходов бурения на углеводородной основе, а также для ряда других органических отходов.
+								.slider-post--item
+									.slider-post--content
+										h5 Морская экологическая служба
+										.slider-post--text
+											p Пиролиз (десорбция, термодесорбция) – наболее современная и экологичная технология утилизации пластика, резины, широкого спектра нефтяных, буровых и целого ряда других промышленных отходов, основанная на принципе безкислородного термического разложения. Термодесорбция особенно эффективна при высоком содержании углеводородов в отходе (15% и выше). Например, для переработки шламов очистки трубопроводов, отходов бурения на углеводородной основе, а также для ряда других органических отходов.
+								.slider-post--item
+									.slider-post--content
+										h5 Морская экологическая служба
+										.slider-post--text
+											p Пиролиз (десорбция, термодесорбция) – наболее современная и экологичная технология утилизации пластика, резины, широкого спектра нефтяных, буровых и целого ряда других промышленных отходов, основанная на принципе безкислородного термического разложения. Термодесорбция особенно эффективна при высоком содержании углеводородов в отходе (15% и выше). Например, для переработки шламов очистки трубопроводов, отходов бурения на углеводородной основе, а также для ряда других органических отходов.
+							.navigate-post
+
+		section.section-contact
+			.container
+				.row
+					.col-md-5.text-center
+						//- .contact-left
+						a(href="#").logo-contact
+							img(src="img/logo-full.png", alt="")
+						a(href="tel:8-800-2222-895").tel-big 8-800-2222-895
+					.col-md-7
+						.contact-descript
+							p ООО «НПО Декантер»
+							p 142000, Россия, Московская область, г. Домодедово #[br] Офис: Каширское шоссе, д.17
+							a(href="mailto:sales@dekanter.ru") sales@dekanter.ru
+
+		section.section-map
+			//- .container
+			iframe(src="https://yandex.ru/map-widget/v1/-/CCQpIYhRpC" frameborder="1" allowfullscreen="true" style="position:relative;")
+
+		//- +iconSvg('34', '32', '0 0 34 32', 'icon-star')

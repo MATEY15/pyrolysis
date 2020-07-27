@@ -1,0 +1,155 @@
+.top-menu--wrapper
+	flex-grow 1
+
+.top-menu
+	display flex
+	flex-direction row
+	justify-content center
+	li
+		position relative
+		
+		trn(.15s)
+		&.active
+			background: #E04830
+			a
+				color #fff
+		&:not(:last-child)
+			// margin-right 42px
+		&:before
+			position absolute
+			top 11px
+			left calc(50% - 3px)
+			content ''
+			width: 12px
+			height: 12px
+			border-style solid
+			border-width 0 0 1px 1px
+			border-color #fff
+			transform rotateZ(-45deg) translate(-50%, 0)
+			opacity 0
+			visibility hidden
+			trn(.15s)
+		&.active:before
+			opacity 1
+			visibility visible
+		&:hover
+			background: #E04830
+			&:before
+				opacity 1
+				visibility visible
+			a
+				color #fff
+		a
+			display inline-block
+			color: #635D5D
+			font-family: mpr
+			font-size: 10px
+			text-transform uppercase
+			text-decoration none
+			padding 80px 14px 15px
+			trn(.15s)
+
+
+.header-content
+	.container
+		position relative
+
+.romb-content
+	position: absolute
+	top: 16%
+	left: 10%
+	width: 100%
+	max-width: 658px
+	padding-top: 27px
+	
+	
+	&:before
+		position absolute
+		top 28px
+		left 126px
+		background: #3233B5
+		content ''
+		width 450px
+		height 360px
+		transform rotateZ(32deg) skew(-27deg, 0deg)
+
+.romb-content--head
+	position relative
+	display block
+	text-decoration none
+	text-align center
+	margin-bottom 18px
+	
+	img
+		width 56px
+		margin-bottom 4px
+	
+	p
+		text-transform uppercase
+		font-size 25px
+		color #fff
+		font-family: mpb
+		margin-bottom 4px
+		span
+			color #00AEEF
+	.link-logo
+		color #fff
+		text-decoration none
+		font-size 16px
+
+.romb-content--foot
+	position relative
+	text-align center
+	h2
+		text-transform uppercase
+		font-size 29px
+		color #fff
+		font-family: mpb
+		margin-bottom 26px
+		.big-head
+			display block
+			font-size 75px
+			line-height 62px
+	p
+		font-size 28px
+		color #fff
+		font-family: mpb
+
+.header-content--bg
+	max-width 100%
+
+.contact-head
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	position: absolute
+	width: 200px
+	height: 200px
+	bottom: 130px
+	right: 74px
+	z-index 10
+	&:before
+		position absolute
+		content ''
+		display block
+		width 200px
+		height 200px
+		background: #79B9E6
+		transform rotateZ(45deg)
+	
+	a
+		position relative
+		display inline-block
+		text-decoration none
+		font-size 22px
+		color #fff
+		font-family mpl
+		&.contact-head--phone
+			font-size 30px
+			color #fff
+			font-family mpr
+		&.contact-head--mail
+			position relative
+			top 10px
+			
